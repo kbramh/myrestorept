@@ -563,7 +563,3 @@ main {
 .footer-nav ul {
   justify-content: center;
 }
-
-.footer-nav a:hover {
-  color: var(--color-link);
-}
