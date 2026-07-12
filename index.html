@@ -20,15 +20,30 @@
           <ul class="mobile_action">
             <li class="left">&nbsp;</li>
             <li id="toggle">
-              <label id="open" class="open">Contact Us</label>
-              <label id="close" style="display: none" class="close"
-                >Close panel</label
+              <button
+                type="button"
+                id="open"
+                aria-controls="panel"
+                aria-expanded="false"
+                class="open"
               >
+                Contact Us
+              </button>
+              <button
+                type="button"
+                id="close"
+                aria-controls="panel"
+                aria-expanded="true"
+                style="display: none"
+                class="close"
+              >
+                Close panel
+              </button>
             </li>
             <li class="right">&nbsp;</li>
           </ul>
         </div>
-        <div id="panel">
+        <div id="panel" aria-hidden="true">
           <div class="panel-content">
             <div class="icon">
               <a href="tel:253-446-6507" class="click-phone">Call us now!</a>

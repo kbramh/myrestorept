@@ -9,12 +9,14 @@
   if (openBtn && closeBtn && panel) {
     openBtn.addEventListener('click', function () {
       panel.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
       openBtn.style.display = 'none';
       closeBtn.style.display = 'inline-block';
     });
 
     closeBtn.addEventListener('click', function () {
       panel.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
       closeBtn.style.display = 'none';
       openBtn.style.display = 'inline-block';
     });

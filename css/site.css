@@ -78,7 +78,7 @@ a:hover {
 /* Mobile contact panel */
 #fixed_mobile_action {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -103,7 +103,7 @@ a:hover {
   flex: 1;
 }
 
-#toggle label {
+#toggle button {
   cursor: pointer;
   padding: 0.75rem 1rem;
   display: inline-block;
@@ -111,7 +111,7 @@ a:hover {
   color: #fff;
 }
 
-#toggle label:hover {
+#toggle button:hover {
   color: var(--color-link);
 }
 
@@ -204,6 +204,10 @@ a:hover {
     flex: 0 1 200px;
     width: 200px;
   }
+
+  .site-wrapper {
+    padding-bottom: 3.5rem;
+  }
 }
 
 /* Layout */
@@ -212,10 +216,6 @@ a:hover {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.25rem 2rem;
-}
-
-.site-header {
-  padding-top: 3rem;
 }
 
 @media (min-width: 768px) {
