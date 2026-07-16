@@ -486,6 +486,27 @@ main {
   margin-top: 1rem !important;
 }
 
+.contact-form-status {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.contact-form-status--sent {
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+  color: #1b5e20;
+}
+
+.contact-form-status--error,
+.contact-form-status--invalid {
+  background: #ffebee;
+  border-color: #ef9a9a;
+  color: #b71c1c;
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto 2rem;
