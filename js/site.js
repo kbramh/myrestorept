@@ -22,6 +22,25 @@
     });
   }
 
+  /* Contact form submission feedback */
+  var contactStatus = document.getElementById('contact-form-status');
+  if (contactStatus) {
+    var status = new URLSearchParams(window.location.search).get('status');
+    var messages = {
+      sent: 'Thank you. Your message has been sent.',
+      error:
+        'Sorry, we could not send your message. Please call us at 253-446-6507.',
+      invalid: 'Please enter your name and a valid email address.',
+    };
+
+    if (messages[status]) {
+      contactStatus.textContent = messages[status];
+      contactStatus.className =
+        'contact-form-status contact-form-status--' + status;
+      contactStatus.hidden = false;
+    }
+  }
+
   /* Highlight current page in navigation */
   var currentPage = document.body.getAttribute('data-page');
   if (currentPage) {
